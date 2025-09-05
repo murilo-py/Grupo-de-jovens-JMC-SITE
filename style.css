@@ -1,0 +1,105 @@
+/* Reset geral */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url('img/fundo.png') no-repeat center center;
+  background-size: cover; /* garante que sempre preencha */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 1000px;
+  text-align: center;
+}
+
+/* Caixa de texto */
+.text-box {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-box h2 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.text-box span {
+  color: #0066ff;
+  font-weight: bold;
+}
+
+.btn {
+  display: block;
+  background: #0066ff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 10px auto;
+  transition: background 0.3s;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background: #0044cc;
+}
+
+.text-box p {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* Logo */
+.logo {
+  width: 180px;
+  margin-top: 20px;
+}
+
+/* --- DESKTOP --- */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .text-box {
+    max-width: 300px;
+    margin-right: 40px;
+    text-align: center;
+    padding: 25px;
+  }
+
+  .text-box h2 {
+    font-size: 1.4rem;
+  }
+
+  .btn {
+    font-size: 1.1rem;
+    padding: 12px 25px;
+  }
+
+  .logo {
+    width: 350px; /* maior só no PC */
+    margin: 0;
+  }
+}
